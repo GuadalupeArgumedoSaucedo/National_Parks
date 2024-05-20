@@ -5816,3 +5816,5 @@ const nationalParksArray = [
       },
     },
   ];
+
+  console.log(nationalParksArray.length)

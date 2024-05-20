@@ -17,4 +17,4 @@ function searchLocation() {
               <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
           </div>`;
-  }
+  } 
