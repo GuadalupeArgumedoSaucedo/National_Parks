@@ -26,7 +26,7 @@ const searchLabel = document.getElementById("search-label");
   searchLocationRadio.addEventListener("change", toggleSearchOptions);
   searchTypeRadio.addEventListener("change", toggleSearchOptions);
   searchInput.addEventListener("change", updateDropdown);
-
+ 
   // Event listener for search button click
   inputSearchButton.addEventListener("click", () => {
     let filteredParks = [];
@@ -70,7 +70,7 @@ const searchLabel = document.getElementById("search-label");
           getParks(item);
         }
     });
-  }
+  } 
 
   // Function to toggle search options based on radio button selection
   // function toggleSearchOptions() {

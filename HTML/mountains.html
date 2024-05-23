@@ -3,43 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mountains</title>
 
-    <link rel="stylesheet" href="scss/style.cs">
+    <link rel="stylesheet" href="/CSS/mountains.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
-
+<script type="module" src="/JavaScript/mountainData.js"></script>
+<script type="module" src="/JavaScript/mountains.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+</script>
 <body>
-    <header>
-        <nav>
-            add nav
-        </nav>
-
-        <select id="mountain">
-            <option>Mountain 1</option>
-            <option>Mountain 1</option>
-            <option>Mountain 1</option>
-            <option>Mountain 1</option>
-        </select>
-
-    </header>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand navbar-light bg-light">
+                <div class="nav navbar-nav">
+                    <a class="nav-item nav-link active" href="#" aria-current="page">Home <span
+                            class="visually-hidden">(current)</span></a>
+                    <a class="nav-item nav-link" href="nationalparks.html">National Parks</a>
+                    <a class="nav-item nav-link" href="mountains.html">Mountains</a>
+                </div>
+            </nav>
+        </header>
+    </div>
     <main>
-        <div id="app"></div>
-        <div id="locations"></div>
-        <div id="mountains"></div>
+        <section id="mountain-header">
+            <h2>Mountains</h2>
 
-        <div id=""></div>
+            <div id="mountain-dropdown">
+                <label id="mountain-dropdown-label" for="search-input">Choose Mountain:</label>
+                <select id="mountain-dropdown-select"></select>
+            </div>    
 
+            <button id="search-button" onclick="loadData();">
+                click here
+            </button>
 
-        <button onclick="loadData();">
-            click here
-        </button>
+            <section id="mountain-results">
+                <div id="my-mountains"></div>
+            </section>
 
     </main>
+
     <footer>
-        footer goes here
+        <div class="container my-5">
+            <footer class="bg-light text-center">
+            <div class="container p-4 pb-0">
+              <section class="">
+                <form action="">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-auto">
+                      <p class="pt-2">
+                        <strong>Sign up for our newsletter</strong>
+                      </p>
+                    </div>
+                    <div class="col-md-5 col-12">
+                      <div class="form-outline mb-4">
+                        <input type="email" id="form5Example2" class="form-control" />
+                        <label class="form-label" for="form5Example2">Email address</label>
+                      </div>
+                    </div>
+            </footer>
     </footer>
 
-    <script src="scripts/mountainData.js"></script>
-    <script src="scripts/mountains.js"></script>
 </body>
 </html>
