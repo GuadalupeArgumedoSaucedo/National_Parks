@@ -1,4 +1,4 @@
-const locationsArray = [
+const locationArray = [
     "Alabama",
     "Alaska",
     "American Samoa",
@@ -55,4 +55,7 @@ const locationsArray = [
     "Wisconsin",
     "Wyoming",
   ];
-  
+  // module.exports=locationsArray;
+  // console.log(locationArray);
+  // module.exports =  locationArray ;
+  export {locationArray};

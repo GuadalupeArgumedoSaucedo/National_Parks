@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
-//Declaring variables
-console.log(locationsArray.length);
+// //Declaring variables
+// console.log(locationsArray.length);
