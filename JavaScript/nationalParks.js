@@ -153,12 +153,29 @@ function parkTemplate(park) {
 
   const card = `
     <div class="card" style="width: 18rem;">
-      <img src="${park.Image}" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">${park.LocationName}</h5>
-        <p class="card-text">${park.State}.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">${park.LocationName || ''}</h5>
+        <p class="card-text">Address:</span></p>
+        <p class="card-text">${park.Address || ''}</p>
+        <p class="card-text">${park.City || ''}, ${park.State || ''} ${park.ZipCode || ''}</p>
+        <p class="card-text">Phone: ${park.Phone || ''}</p>
+        <p class="card-text">Fax: ${park.Fax || ''}</p>
+        ${park.Visit ? `<a href="${park.Visit}" class="btn btn-primary">Visit page</a>` : ''}
       </div>
     </div>`;
     myParks.innerHTML += card;
 }
+
+// Function to display all national parks
+function viewAllParks() {
+  // Clear existing content
+  myParks.innerHTML = "";
+
+  // Display all national parks
+  nationalParksArray.forEach(park => {
+      parkTemplate(park);
+  });
+}
+
+// Add an event listener for "View All" button click
+document.getElementById("view-all-button").addEventListener("click", viewAllParks);

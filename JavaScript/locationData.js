@@ -55,7 +55,5 @@ const locationArray = [
     "Wisconsin",
     "Wyoming",
   ];
-  // module.exports=locationsArray;
-  // console.log(locationArray);
-  // module.exports =  locationArray ;
+
   export {locationArray};
