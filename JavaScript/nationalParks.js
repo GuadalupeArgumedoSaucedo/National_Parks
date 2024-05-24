@@ -1,12 +1,5 @@
 "use strict";
 
-window.onload = function() {
-  var radios = document.querySelectorAll('input[type="radio"]');
-  radios.forEach(function(radio) {
-      radio.checked = false;
-  });
-};
-
 // Import data arrays
 import { locationArray } from "./locationData.js";
 import { parkTypesArray } from "./parkTypeData.js";
@@ -68,7 +61,7 @@ function toggleSearchOptions() {
   if (searchLocationRadio.checked) {
     searchLabel.textContent = "Choose State:";
     populateDropdown(searchInput, locationArray);
-    parkTemplate(searchInput.value);
+    parkTemplate(inputSearch.value);
   } else if (searchTypeRadio.checked) {
     searchLabel.textContent = "Choose Park Type:";
     populateDropdown(searchInput, parkTypesArray);
