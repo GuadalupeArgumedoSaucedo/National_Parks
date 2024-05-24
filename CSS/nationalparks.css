@@ -85,7 +85,17 @@ main {
     border: 1px solid #ced4da;
 }
 
-/* style.css */
+.card{
+        display: flex;
+        max-width: 150%;
+        grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+        gap: 0px;
+        width: 95%;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 25px;
+        justify-content: flex-start;
+}
 
 #results-section {
     margin-top: 20px;
@@ -111,7 +121,7 @@ footer .container {
 }
 
 footer p {
-    color: #efebe2;
+    color: #ffffff;
 }
 
 footer .form-outline {
@@ -119,7 +129,7 @@ footer .form-outline {
 }
 
 footer .form-outline .form-label {
-    color: #000000;
+    color: #ffffff;
 }
 
 footer .form-outline .form-control {
