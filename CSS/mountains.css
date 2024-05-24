@@ -1,10 +1,8 @@
-/* style.css */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #efebe2; /* Background color */
+    background-color: #efebe2; 
 }
 
 .container {
@@ -17,12 +15,12 @@ header {
 }
 
 header .navbar {
-    padding: 1rem 2.5rem; /* Increased padding for left and right */
-    background-color: #fe84029a; /* Navbar color */
+    padding: 1rem 2.5rem; 
+    background-color: #fe84029a; 
 }
 
 header .navbar-nav .nav-link {
-    margin-right: 25px; /* Increased margin between nav links */
+    margin-right: 25px; 
 }
 
 header .navbar-nav .nav-link.active {
@@ -42,18 +40,18 @@ main {
 }
 
 #mountain-header h2 {
-    font-size: 2.5rem; /* Keep the same size as in the reference */
+    font-size: 2.5rem; 
     color: #1a451a;
-    margin-bottom: 20px; /* Keep the same margin as in the reference */
+    margin-bottom: 20px; 
 }
 
 #mountain-dropdown {
-    margin-bottom: 30px; /* Keep the same margin as in the reference */
+    margin-bottom: 30px; 
 }
 
 #mountain-dropdown-label {
-    font-size: 1rem; /* Keep the same size as in the reference */
-    margin-right: 25px; /* Adjusted to match the reference */
+    font-size: 1rem; 
+    margin-right: 25px; 
     color: #000000;
 }
 
@@ -82,9 +80,9 @@ main {
 
 #my-mountains {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Use auto-fit and minmax for responsive columns */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 20px;
-    justify-content: center; /* Center the grid items */
+    justify-content: center; 
 }
 
 .mountain {
@@ -93,7 +91,7 @@ main {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center text within the cards */
+    text-align: center; 
 }
 
 .mountain img.mountain-photo {
@@ -103,8 +101,8 @@ main {
 }
 
 footer {
-    background-color: #52836e; /* Footer color */
-    padding: 10px 0; /* Reduced padding for top and bottom */
+    background-color: #52836e; 
+    padding: 10px 0; 
     border-top: 1px solid #efebe2;
     margin-left: 1%;
     margin-right: 1%;

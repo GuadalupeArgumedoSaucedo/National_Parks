@@ -47,6 +47,8 @@ function mountainTemplate(mountain) {
       </div>
   `;
 }
+
+
 /*
 <strong>Sunrise:</strong> ${mySunrise}
 

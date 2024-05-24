@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #efebe2; /* Background color */
+    background-color: #efebe2;
 } 
 
 .container {
@@ -15,12 +15,12 @@ header {
 }
 
 header .navbar {
-    padding: 1rem 2.5rem; /* Increased padding for left and right */
-    background-color: #fe84029a; /* Navbar color */
+    padding: 1rem 2.5rem; 
+    background-color: #fe84029a; 
 }
 
 header .navbar-nav .nav-link {
-    margin-right: 25px; /* Increased margin between nav links */
+    margin-right: 25px; 
 }
 
 header .navbar-nav .nav-link.active {
@@ -103,13 +103,13 @@ main {
 
 #my-parks {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr)); /* Changed from auto-fill to fixed 4 columns */
+    grid-template-columns: repeat(4, minmax(0, 1fr)); 
     gap: 20px;
 }
 
 footer {
-    background-color: #52836e; /* Footer color */
-    padding: 10px 0; /* Reduced padding for top and bottom */
+    background-color: #52836e; 
+    padding: 10px 0; 
     border-top: 1px solid #efebe2;
     margin-left: 1%;
     margin-right: 1%;
