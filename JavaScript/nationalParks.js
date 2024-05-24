@@ -73,7 +73,7 @@ function updateDropdown() {
   getParks(searchInput.value);
 }
 
-// Fetch parks
+// Fetching parks
 function getParks(selectedItem) {
   myParks.innerHTML = "";
   nationalParksArray.forEach(item => {
