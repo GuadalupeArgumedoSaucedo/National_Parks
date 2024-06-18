@@ -92,8 +92,8 @@ function getParks(selectedItem) {
 
 // Function for searching parks by location
 function searchByLocation() {
-  let message = `${locationsArray.length} National Park to visit`;
-  message += locationsArray.map(parkTemplate).join("");
+  let message = `${locationArray.length} National Park to visit`;
+  message += locationArray.map(parkTemplate).join("");
   document.getElementById("myParks").innerHTML = message;
 }
 
@@ -132,3 +132,34 @@ function viewAllParks() {
 // Event listener for viewing all parks button
 document.getElementById("view-all-button").addEventListener("click", viewAllParks);
 
+// Event listener for search button
+inputSearchButton.addEventListener("click", () => {
+  const searchText = inputSearch.value.trim().toLowerCase();
+  let filteredParks = [];
+
+  // Filter parks based on search input
+  if (searchText !== "") {
+      filteredParks = nationalParksArray.filter(park => {
+          // Check if the park name contains the search text
+          return park.LocationName.toLowerCase().includes(searchText);
+      });
+  } else {
+      // If search input is empty, display all parks
+      filteredParks = nationalParksArray;
+  }
+
+  // Display filtered parks
+  displayResults(filteredParks);
+});
+
+// Function to display filtered parks
+function displayResults(parks) {
+  myParks.innerHTML = "";
+  if (parks.length > 0) {
+      parks.forEach(park => {
+          parkTemplate(park);
+      });
+  } else {
+      myParks.innerHTML = "<p>No parks found.</p>";
+  }
+}
